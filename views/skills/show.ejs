@@ -10,18 +10,6 @@
     <title>Express To-Do</title>
 </head>
 <body>
-    <h1>Developer Skills</h1>
-    <ul>
-        <% skills.forEach(function(t) { %>
-            <li>
-              <form action="/skills/<%= t.id %>?_method=DELETE"
-                class="delete-form" method="POST">
-                <button type="submit" class="btn btn-outline-danger">Delete</button>
-              </form>
-            <a href="/skills/<%= t.id %>"><%= t.skill %></a>
-        </li>
-      <% }); %>
-    </ul>
-    <a href="/skills/new">Add To-Do</a>
-  </body>
+	<h3><%= skill.id %></h3>
+</body>
 </html>
